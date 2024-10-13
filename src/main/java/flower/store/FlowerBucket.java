@@ -7,8 +7,11 @@ public class FlowerBucket {
     public FlowerBucket() {
         this.flowerPacks = new ArrayList<>();
     }
-    public void addFlowerPack(FlowerPack flowerPack) {
+    public void add(FlowerPack flowerPack) {
         flowerPacks.add(flowerPack);
+    }
+    public List<FlowerPack> getFlowerPacks() {
+        return flowerPacks;
     }
     public double getPrice() {
         double price = 0;

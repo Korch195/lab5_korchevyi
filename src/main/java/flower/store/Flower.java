@@ -9,7 +9,7 @@ public class Flower {
     @Getter
     private double sepalLength;
     private FlowerColor color;
-    @Getter
+    @Getter @Setter
     private double price;
     @Getter
     private FlowerType flowerType;
