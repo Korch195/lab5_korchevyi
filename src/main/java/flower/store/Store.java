@@ -9,8 +9,9 @@ public class Store {
         ArrayList<FlowerBucket> bag = new ArrayList<>();
         for (FlowerBucket bucket : flowerBuckets) {
             for (FlowerPack pack : bucket.getFlowerPacks()) {
-                if (pack.getFlower().getColor().equalsIgnoreCase(flower.getColor()) && 
-                pack.getFlower().getFlowerType().equals(flower.getFlowerType())) {
+                if (pack.getFlower().getColor().equalsIgnoreCase(flower.getColor())
+                && pack.getFlower().getFlowerType().equals
+                (flower.getFlowerType())) {
                     bag.add(bucket);
                     break;
                 }

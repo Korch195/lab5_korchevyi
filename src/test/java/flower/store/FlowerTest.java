@@ -45,7 +45,8 @@ public class FlowerTest {
 
             Flower copiedFlower = new Flower(flower);
             Assertions.assertEquals(flower.getPrice(), copiedFlower.getPrice());
-            Assertions.assertEquals(flower.getFlowerType(), copiedFlower.getFlowerType());
+            Assertions.assertEquals(flower.getFlowerType(), 
+            copiedFlower.getFlowerType());
             Assertions.assertEquals(flower.getColor(), copiedFlower.getColor());
         }
 }
