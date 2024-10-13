@@ -30,4 +30,21 @@ public class FlowerTest {
         flower.setColor(color);
         Assertions.assertEquals("#FF0000", flower.getColor());
     }
+    @Test
+        public void testFlowerType() {
+            flower.setFlowerType(FlowerType.ROSE);
+            Assertions.assertEquals(FlowerType.ROSE, flower.getFlowerType());
+        }
+
+        @Test
+        public void testFlowerCopyConstructor() {
+            flower.setPrice(20);
+            flower.setFlowerType(FlowerType.TULIP);
+            flower.setColor(FlowerColor.BLUE);
+
+            Flower copiedFlower = new Flower(flower);
+            Assertions.assertEquals(flower.getPrice(), copiedFlower.getPrice());
+            Assertions.assertEquals(flower.getFlowerType(), copiedFlower.getFlowerType());
+            Assertions.assertEquals(flower.getColor(), copiedFlower.getColor());
+        }
 }
